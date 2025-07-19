@@ -29,7 +29,7 @@ URL = ["https://chartink.com/screener/copy-atp-above-long-fut1",
        "https://chartink.com/screener/2-day-range-bound-f-o",
        "https://chartink.com/screener/copy-rsi-macd-f-o-sell-scan",
        "https://chartink.com/screener/copy-strong-stocks-3419", 
-]      "https://chartink.com/screener/w6-1",
+       "https://chartink.com/screener/w6-1",
        "https://chartink.com/screener/down-1273"]    
        
 sheet_id = "1QjvejkKtq0h8trJOAJCPBXGEViD5W_e52HGEvgXmBJg"
