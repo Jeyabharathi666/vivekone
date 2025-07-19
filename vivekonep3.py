@@ -2,7 +2,7 @@ from playwright.sync_api import sync_playwright
 from datetime import datetime
 import google_sheets  # assumes you have this module ready like in your Economic Times script
 import time
-URL = [""https://chartink.com/screener/copy-atp-above-long-fut1",
+URL = ["https://chartink.com/screener/copy-atp-above-long-fut1",
        "https://chartink.com/screener/nr-f-0-2",
        "https://chartink.com/screener/f-0-215",
        "https://chartink.com/screener/positional-f-0-at-3-00",
