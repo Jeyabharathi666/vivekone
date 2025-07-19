@@ -2,34 +2,38 @@ from playwright.sync_api import sync_playwright
 from datetime import datetime
 import google_sheets  # assumes you have this module ready like in your Economic Times script
 import time
-URL = ["https://chartink.com/screener/copy-copy-copy-sreelakshmi-guruvayoorappan-b-atr-volume-rocket-8",
-       "https://chartink.com/screener/agp-bullish2-p5",
-       "https://chartink.com/screener/copy-akshat-monthly-momentum-37",
-       "https://chartink.com/screener/all-u1-nk-sir-s-uptrend-stocks-all-time-uptrend",
-       "https://chartink.com/screener/aaa13-vp-sheshapathi",
-       "https://chartink.com/screener/agp-shesha-bulloong1",
-       "https://chartink.com/screener/smbg2-new-multibegger-stocks-for-next-few-days",
-       "https://chartink.com/screener/copy-sjbl6ch-shesha-buy-bollinger-band-weekly",
-       "https://chartink.com/screener/svp2-closing-3-up-since-3-days",
-       "https://chartink.com/screener/smbg2-multibegger-stocks-for-next-few-days",
-       "https://chartink.com/screener/shesha-magic-buy-love",
-       "https://chartink.com/screener/copy-mahi-2-master-trader-vishnu-final-40-address-this-urgent-bellinaire-38-to-47-3",
-       "https://chartink.com/screener/cash-tss-momentum-long",
-       "https://chartink.com/screener/copy-copy-bb-blaster-2",
-       "https://chartink.com/screener/copy-the-best-btst-193",
-       "https://chartink.com/screener/22-nw-shesha-magic-buy-love",
-       "https://chartink.com/screener/copy-atp-above-long-cash-2",
-       "https://chartink.com/screener/copy-bullish-for-next-day-future-and-option-trading-animesh-2",
-       "https://chartink.com/screener/copy-copy-how-to-find-future-and-option-stocks-buy-entry-future-3",
-       "https://chartink.com/screener/22-nw-shesha-magic-buy-love-f-o",
-       "https://chartink.com/screener/agp-bullish2",
-       "https://chartink.com/screener/copy-atp-above-long-24",
-       "https://chartink.com/screener/copy-copy-future-and-option-pin-bar-pranshu-tiwari",
-       "https://chartink.com/screener/copy-copy-future-and-options-2-1-4",
-       "https://chartink.com/screener/22-nw-shesha-magic-buy-love-fut"]
+URL = [""https://chartink.com/screener/copy-atp-above-long-fut1",
+       "https://chartink.com/screener/nr-f-0-2",
+       "https://chartink.com/screener/f-0-215",
+       "https://chartink.com/screener/positional-f-0-at-3-00",
+       "https://chartink.com/screener/stocks-for-f-0",
+       "https://chartink.com/screener/copy-nr7-atfinallynitin-f-0",
+       "https://chartink.com/screener/f-o-rsi",
+       "https://chartink.com/screener/copy-daily-min-f-0-trade",
+       "https://chartink.com/screener/rk-position-f-0",
+       "https://chartink.com/screener/richie-rich-f-0",
+       "https://chartink.com/screener/anil-494",
+       "https://chartink.com/screener/copy-13579-swing-trading-by-trading-executive-2338",
+       "https://chartink.com/screener/atr-volume-f-o-200",
+       "https://chartink.com/screener/mms-rb",
+       "https://chartink.com/screener/w6-wsma20",
+       "https://chartink.com/screener/vikram-rocket-up-nr7",
+       "https://chartink.com/screener/copy-copy-rocket-booster-1-304",
+       "https://chartink.com/screener/atr-volume-f-o-200-wkly-rsi",
+       "https://chartink.com/screener/copy-stocks-in-downtrend-1959",
+       "https://chartink.com/screener/copy-super-bearish-f-0-rsp-114",
+       "https://chartink.com/screener/f-0-sell",
+       "https://chartink.com/screener/bearish-f-0-3",
+       "https://chartink.com/screener/sell-f-0",
+       "https://chartink.com/screener/gfs-rsi-scan-8",
+       "https://chartink.com/screener/2-day-range-bound-f-o",
+       "https://chartink.com/screener/copy-rsi-macd-f-o-sell-scan",
+       "https://chartink.com/screener/copy-strong-stocks-3419", 
+       "https://chartink.com/screener/w6-1",
+       "https://chartink.com/screener/down-1273"]
        
 sheet_id = "1QjvejkKtq0h8trJOAJCPBXGEViD5W_e52HGEvgXmBJg"
-worksheet_name = ["p1","p2","p3","p4","p5","p6","p7","p8","p9","p10","p11","p12","p13","p14","p15","p16","p17","p18","p19","p20","p21","p22","p23","p24","p25"]
+worksheet_name = ["p1","p2","p3","p4","p5","p6","p7","p8","p9","p10","p11","p12","p13","p14","p15","p16","p17","p18","p19","p20","p21","p22","p23","p24","p25","p26","p27","p28","p29"]
        
 def scrape_chartink(URL, worksheet_name):
     print(f"🚀 Starting Chartink scrape for {worksheet_name}...")
