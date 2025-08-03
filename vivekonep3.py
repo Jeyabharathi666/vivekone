@@ -22,7 +22,7 @@ URL = ["https://chartink.com/screener/copy-akshat-monthly-momentum-37",
        "https://chartink.com/screener/copy-super-bearish-f-0-rsp-114",
        "https://chartink.com/screener/copy-bearish-f-0",
        "https://chartink.com/screener/copy-bearish-momentum-stocks-1409",
-       'https://chartink.com/screener/copy-w6-f-o-2",
+       "https://chartink.com/screener/copy-w6-f-o-2",
        "https://chartink.com/screener/copy-1week-sell-twist",
        "https://chartink.com/screener/agp-services-bearish-1"]
        
