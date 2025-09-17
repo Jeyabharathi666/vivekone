@@ -136,7 +136,7 @@ def scrape_chartink(url, worksheet_name):
 
             if page.is_visible("text='No records found'"):
                 print(f"⚠️ No records found at {url}. Writing 'No Data'.")
-                rows = [["No Data"]]
+                rows = [[" "]]
             else:
                 try:
                     page.wait_for_selector("div.relative table tbody tr", timeout=60000)
@@ -151,22 +151,22 @@ def scrape_chartink(url, worksheet_name):
 
                     if len(rows) == 0:
                         print(f"⚠️ Table found but no rows present. Writing 'No Data'.")
-                        rows = [["No Data"]]
+                        rows = [[" "]]
 
                 except PlaywrightTimeoutError:
                     print(f"❌ Table not found at {url}. Writing 'No Data'.")
-                    rows = [["No Data"]]
+                    rows = [[" "]]
 
             google_sheets.update_google_sheet_by_name(sheet_id, worksheet_name, headers, rows)
 
         except PlaywrightTimeoutError:
             print(f"❌ Timeout error at {url}. Writing 'No Data'.")
-            rows = [["No Data"]]
+            rows = [[" "]]
             google_sheets.update_google_sheet_by_name(sheet_id, worksheet_name, headers, rows)
 
         except Exception as e:
             print(f"❌ Unexpected error: {e}. Writing 'No Data'.")
-            rows = [["No Data"]]
+            rows = [[" "]]
             google_sheets.update_google_sheet_by_name(sheet_id, worksheet_name, headers, rows)
 
         finally:
