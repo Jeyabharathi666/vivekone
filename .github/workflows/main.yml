@@ -2,7 +2,7 @@ name: Update Data Every 5 Minutes
 
 on:
   schedule:
-    - cron: "*/10 * * * *" # Runs every 5 minutes
+    - cron: "*/10 * * * *"   # Runs every 10 minutes
   workflow_dispatch:
 
 jobs:
@@ -11,18 +11,36 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: '3.11'
+
+      # ✅ CACHE PIP DEPENDENCIES
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            pip-${{ runner.os }}-
+
+      # ✅ CACHE PLAYWRIGHT BROWSERS
+      - name: Cache Playwright
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}
+          restore-keys: |
+            playwright-${{ runner.os }}
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          python -m playwright install
+          python -m playwright install chromium
 
       - name: Run Python script
         env:
