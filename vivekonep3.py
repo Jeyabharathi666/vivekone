@@ -139,8 +139,10 @@ def scrape_chartink(url, worksheet_name):
                 rows = [[" "]]
             else:
                 try:
-                    page.wait_for_selector("div.relative table tbody tr", timeout=60000)
-                    table_rows = page.query_selector_all("div.relative table tbody tr")
+                   #page.wait_for_selector("div.relative table tbody tr", timeout=60000)
+                    #table_rows = page.query_selector_all("div.relative table tbody tr")
+                    page.wait_for_selector("div.relative div.overflow-x-auto table tbody tr",timeout=60000)
+                    table_rows = page.query_selector_all("div.relative div.overflow-x-auto table tbody tr")
                     print(f"📥 Extracted {len(table_rows)} rows.")
 
                     rows = []
