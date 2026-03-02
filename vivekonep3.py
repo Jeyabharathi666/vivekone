@@ -2,36 +2,17 @@
 from datetime import datetime
 import google_sheets  # assumes you have this module ready like in your Economic Times script
 import time
-URL = ["https://chartink.com/screener/copy-the-best-btst-193",	
+URL = [ "https://chartink.com/screener/copy-the-best-btst-193",	
        "https://chartink.com/screener/22-nw-shesha-magic-buy-love",	
-       "https://chartink.com/screener/copy-bullish-for-next-day-future-and-option-trading-animesh-2",	
-       "https://chartink.com/screener/copy-copy-copy-future-and-option-pin-bar-pranshu-tiwari-2",	
-       "https://chartink.com/screener/copy-f-0-6",	
-       "https://chartink.com/screener/copy-positional-f-0-at-2",	
-       "https://chartink.com/screener/copy-stocks-for-f-0",	
        "https://chartink.com/screener/copy-richie-rich-f-0-2",	
-       "https://chartink.com/screener/copy-akshat-monthly-momentum-37",	
-       "https://chartink.com/screener/all-u1-nk-sir-s-uptrend-stocks-all-time-uptrend",	
-       "https://chartink.com/screener/copy-sjbl6ch-shesha-buy-bollinger-band-weekly",	
-       "https://chartink.com/screener/smbg2-multibegger-stocks-for-next-few-days",	
-       "https://chartink.com/screener/copy-copy-bb-blaster-2",	
-       "https://chartink.com/screener/copy-f-o-rsi-84",	
-       "https://chartink.com/screener/copy-vikram-rocket-up-nr7",	
-       "https://chartink.com/screener/copy-atr-volume-f-o-200-wkly-rsi-70-16",
-       "https://chartink.com/screener/copy-cci-below-100-62",
-       "https://chartink.com/screener/copy-bearish-rsi-stoc-1215",
-       "https://chartink.com/screener/srf-narayana-futures-positional-bearish",
-       "https://chartink.com/screener/sell-bollinger-band-weekly-15",
-       "https://chartink.com/screener/copy-bolinger-band-bearish-reversal-aps-401",
-       "https://chartink.com/screener/copy-ut-sell-eod-basis-5",
-       "https://chartink.com/screener/sell-postesttttttttttttttttt",
-       "https://chartink.com/screener/copy-sell-f-0",
-       "https://chartink.com/screener/copy-2-day-range-bound-f-o-99",
-       "https://chartink.com/screener/copy-copy-rsi-macd-f-o-sell-scan"]
+       "https://chartink.com/screener/all-u1-nk-sir-s-uptrend-stocks-all-time-uptrend",
+       "https://chartink.com/screener/copy-sjbl6ch-shesha-buy-bollinger-band-weekly",
+       "https://chartink.com/screener/copy-copy-bb-blaster-2",
+       "https://chartink.com/screener/copy-atr-volume-f-o-200-wkly-rsi-70-16"
+	]
        
 sheet_id = "1QjvejkKtq0h8trJOAJCPBXGEViD5W_e52HGEvgXmBJg"
-worksheet_name = ["p1","p2","p3","p4","p5","p6","p7","p8","p9","p10","p11","p12","p13","p14","p15","p16","p17","p18","p19","p20","p21","p22","p23","p24","p25","p26"]
-       
+worksheet_name = ["p1","p2","p3","p4","p5","p6","p7"]
 def scrape_chartink(URL, worksheet_name):
     print(f"🚀 Starting Chartink scrape for {worksheet_name}...")
     print(f"🌐 Loading: {URL}")
@@ -80,39 +61,19 @@ import google_sheets
 import time
 
 URLS = [
-    "https://chartink.com/screener/copy-the-best-btst-193",
-    "https://chartink.com/screener/22-nw-shesha-magic-buy-love",
-    "https://chartink.com/screener/copy-bullish-for-next-day-future-and-option-trading-animesh-2",
-    "https://chartink.com/screener/copy-copy-copy-future-and-option-pin-bar-pranshu-tiwari-2",
-    "https://chartink.com/screener/copy-f-0-6",
-    "https://chartink.com/screener/copy-positional-f-0-at-2",
-    "https://chartink.com/screener/copy-stocks-for-f-0",
-    "https://chartink.com/screener/copy-richie-rich-f-0-2",
-    "https://chartink.com/screener/copy-akshat-monthly-momentum-37",
-    "https://chartink.com/screener/all-u1-nk-sir-s-uptrend-stocks-all-time-uptrend",
-    "https://chartink.com/screener/copy-sjbl6ch-shesha-buy-bollinger-band-weekly",
-    "https://chartink.com/screener/smbg2-multibegger-stocks-for-next-few-days",
-    "https://chartink.com/screener/copy-copy-bb-blaster-2",
-    "https://chartink.com/screener/copy-f-o-rsi-84",
-    "https://chartink.com/screener/copy-vikram-rocket-up-nr7",
-    "https://chartink.com/screener/copy-atr-volume-f-o-200-wkly-rsi-70-16",
-    "https://chartink.com/screener/copy-cci-below-100-62",
-    "https://chartink.com/screener/copy-bearish-rsi-stoc-1215",
-    "https://chartink.com/screener/srf-narayana-futures-positional-bearish",
-    "https://chartink.com/screener/sell-bollinger-band-weekly-15",
-    "https://chartink.com/screener/copy-bolinger-band-bearish-reversal-aps-401",
-    "https://chartink.com/screener/copy-ut-sell-eod-basis-5",
-    "https://chartink.com/screener/sell-postesttttttttttttttttt",
-    "https://chartink.com/screener/copy-sell-f-0",
-    "https://chartink.com/screener/copy-2-day-range-bound-f-o-99",
-    "https://chartink.com/screener/copy-copy-rsi-macd-f-o-sell-scan"
+    
+     "https://chartink.com/screener/copy-the-best-btst-193",	
+     "https://chartink.com/screener/22-nw-shesha-magic-buy-love",	
+     "https://chartink.com/screener/copy-richie-rich-f-0-2",	
+     "https://chartink.com/screener/all-u1-nk-sir-s-uptrend-stocks-all-time-uptrend",
+     "https://chartink.com/screener/copy-sjbl6ch-shesha-buy-bollinger-band-weekly",
+     "https://chartink.com/screener/copy-copy-bb-blaster-2",
+     "https://chartink.com/screener/copy-atr-volume-f-o-200-wkly-rsi-70-16"     
 ]
 
 sheet_id = "1QjvejkKtq0h8trJOAJCPBXGEViD5W_e52HGEvgXmBJg"
 worksheet_names = [
-    "p1","p2","p3","p4","p5","p6","p7","p8","p9","p10","p11",
-    "p12","p13","p14","p15","p16","p17","p18","p19","p20",
-    "p21","p22","p23","p24","p25","p26"
+    "p1","p2","p3","p4","p5","p6","p7"
 ]
 
 def scrape_chartink(url, worksheet_name):
