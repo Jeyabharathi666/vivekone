@@ -6,7 +6,7 @@ URL = ["https://chartink.com/screener/copy-copy-copy-future-and-option-pin-bar-p
        "https://chartink.com/screener/copy-akshat-monthly-momentum-37",	
        "https://chartink.com/screener/agp-shesha-bulloong1",	
        "https://chartink.com/screener/copy-mahi-2-master-trader-vishnu-final-40-address-this-urgent-bellinaire-38-to-47-3",
-       "https://chartink.com/screener/copy-sjbl6ch-shesha-buy-bollinger-band-weekly",
+       "https://chartink.com/screener/copy-positional-f-0-at-2",
        "https://chartink.com/screener/copy-copy-bb-blaster-2",
        "https://chartink.com/screener/copy-atr-volume-f-o-200-wkly-rsi-70-16"
 	]
