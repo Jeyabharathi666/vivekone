@@ -2,10 +2,10 @@
 from datetime import datetime
 import google_sheets  # assumes you have this module ready like in your Economic Times script
 import time
-URL = [ "https://chartink.com/screener/copy-the-best-btst-193",	
-       "https://chartink.com/screener/22-nw-shesha-magic-buy-love",	
-       "https://chartink.com/screener/copy-richie-rich-f-0-2",	
-       "https://chartink.com/screener/all-u1-nk-sir-s-uptrend-stocks-all-time-uptrend",
+URL = ["https://chartink.com/screener/copy-copy-copy-future-and-option-pin-bar-pranshu-tiwari-2",	
+       "https://chartink.com/screener/copy-akshat-monthly-momentum-37",	
+       "https://chartink.com/screener/agp-shesha-bulloong1",	
+       "https://chartink.com/screener/copy-mahi-2-master-trader-vishnu-final-40-address-this-urgent-bellinaire-38-to-47-3",
        "https://chartink.com/screener/copy-sjbl6ch-shesha-buy-bollinger-band-weekly",
        "https://chartink.com/screener/copy-copy-bb-blaster-2",
        "https://chartink.com/screener/copy-atr-volume-f-o-200-wkly-rsi-70-16"
