@@ -8,7 +8,7 @@ URL = ["https://chartink.com/screener/copy-copy-copy-future-and-option-pin-bar-p
        "https://chartink.com/screener/copy-mahi-2-master-trader-vishnu-final-40-address-this-urgent-bellinaire-38-to-47-3",
        "https://chartink.com/screener/copy-positional-f-0-at-2",
        "https://chartink.com/screener/copy-f-0-6",
-       "https://chartink.com/screener/copy-atr-volume-f-o-200-wkly-rsi-70-16"
+       "https://chartink.com/screener/copy-vikram-rocket-up-nr7"
 	]
        
 sheet_id = "1QjvejkKtq0h8trJOAJCPBXGEViD5W_e52HGEvgXmBJg"
