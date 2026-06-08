@@ -23,8 +23,8 @@ URLS = [
 	  "https://chartink.com/screener/copy-cci-below-100-62",
 	  "https://chartink.com/screener/copy-bearish-rsi-stoc-1215".
 	  "https://chartink.com/screener/srf-narayana-futures-positional-bearish",
-	  "https://chartink.com/screener/sell-bollinger-band-weekly-15
-	  "https://chartink.com/screener/copy-bolinger-band-bearish-reversal-aps-401
+	  "https://chartink.com/screener/sell-bollinger-band-weekly-15",
+	  "https://chartink.com/screener/copy-bolinger-band-bearish-reversal-aps-401",
 	  "https://chartink.com/screener/copy-ut-sell-eod-basis-5",
 	  "https://chartink.com/screener/copy-sell-f-0",
 	  "https://chartink.com/screener/copy-perfect-bearish-3266",
